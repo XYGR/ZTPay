@@ -1,0 +1,16 @@
+#app{
+    width: 100%;
+    height: 100%;
+    color: #333;
+    font-size: 0.187rem;
+    font-family: PingFangSC-Regular;
+}
+.page{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 1.307rem;
+}
+.page.sub-page{
+    bottom: 0;
+}
