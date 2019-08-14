@@ -5,7 +5,7 @@
             <i class="iconfont icon-shouye"></i>
             <span class="tab-bar-item-text">首页</span>
         </router-link>
-        <router-link to="/category" class="tab-bar-item">
+        <router-link to="/money" class="tab-bar-item">
             <i class="iconfont icon-licai"></i>
             <span class="tab-bar-item-text">理财</span>
         </router-link>

@@ -2,7 +2,7 @@
     <div class="home-banner">
         <van-swipe :autoplay="3000">
             <van-swipe-item >
-                <img src="../../../../assets/home/home_banner.png" alt="">
+                <img class="home-banner-img" src="../../../../assets/home/home_banner.png" alt="">
             </van-swipe-item>
         </van-swipe>
     </div>
