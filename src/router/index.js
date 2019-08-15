@@ -10,11 +10,9 @@ import Vue from 'vue';
 import Router from "vue-router";
 Vue.use(Router);
 import home from "./home";
-<<<<<<< HEAD
-import login from './login'
-=======
+import login from './login';
 import money from "./money";
->>>>>>> a894635e45ce4f848f55835c499d5819269ac9e9
+import mine from "./mine";
 
 export default new Router({
     mode:'history',
@@ -24,10 +22,8 @@ export default new Router({
             redirect:"/home"
         },
         ...home,
-<<<<<<< HEAD
-        ...login
-=======
-        ...money
->>>>>>> a894635e45ce4f848f55835c499d5819269ac9e9
+        ...login,
+        ...money,
+        ...mine
     ]
 })

@@ -24,7 +24,7 @@ export default {
      .theme{
         background: #fff;
         .theme-wrap{
-             margin: 1.4667rem 2.88rem  2.3333rem 2.6667rem
+             margin: 1.4667rem 2.88rem  2.3333rem 2.6667rem;
              img{
                  width: 4.4533rem;
                  height:3.0667rem;
