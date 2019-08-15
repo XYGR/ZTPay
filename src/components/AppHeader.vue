@@ -1,9 +1,9 @@
-//公共头部模块
 <template>
+<!--    公共头部模块-->
     <div id="app-header">
-        //返回按钮
+<!--        返回按钮-->
         <i class="iconfont icon-arrow-left" @click="$router.back()"></i>
-        //标题 需要通过props传入title
+<!--        标题 需要通过props传入title-->
         <h2 class="app-header-title">{{title}}</h2>
     </div>
 </template>

@@ -31,6 +31,7 @@
         bottom: 0;
         left: 0;
         box-shadow:0px -0.027rem 0.133rem 0rem rgba(71,70,70,0.22);
+        background-color: #FFFFFF;
         &-item{
             flex: 1;
             display: flex;
