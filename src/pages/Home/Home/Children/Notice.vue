@@ -4,13 +4,13 @@
              平台合规稳定运营<span>1</span>年<span>206</span>天
         </h3>
         <div class="home-notice-info">
-            <router-link to="/home">
+            <router-link to="/home/msg/1">
                 <img src="../../../../assets/home/home_yuan.png" alt="">
             </router-link>
-            <router-link to="/home">
+            <router-link to="/home/msg/2">
                 <img src="../../../../assets/home/home_ren.png" alt="">
             </router-link>
-            <router-link to="/home">
+            <router-link to="/home/msg/3">
                 <img src="../../../../assets/home/home_yuan1.png" alt="">
             </router-link>
         </div>
