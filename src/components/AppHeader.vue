@@ -12,7 +12,7 @@
     export default {
         name: "app-header",
         props:{
-            title:String
+            title:String,
         },
         methods:{
 

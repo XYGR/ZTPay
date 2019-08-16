@@ -6,6 +6,24 @@ export default [
             {
                 path:"msg/:id",
                 component:()=>import('../pages/Home/Msg/Msg'),
+                children:[
+                    {
+                        path:"Issues",
+                        component:()=>import('../pages/Home/Msg/Children/Issues'),
+                    },
+                    {
+                        path:"Manage",
+                        component:()=>import('../pages/Home/Msg/Children/Manage'),
+                    },
+                    {
+                        path:"Records",
+                        component:()=>import('../pages/Home/Msg/Children/Records'),
+                    },
+                    {
+                        path:"/",
+                        component:()=>import('../pages/Home/Msg/Children/Issues'),
+                    }
+                ]
             }
         ]
     }
