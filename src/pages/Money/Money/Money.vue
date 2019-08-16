@@ -1,10 +1,13 @@
 <template>
-    <div id="money" class="page">
-        <money-header></money-header>
-        <app-scroll>
-            <money-hot></money-hot>
-            <money-bid v-for="(item,index) in bidList" :data="item" :key="index"></money-bid>
-        </app-scroll>
+    <div>
+        <div id="money" class="page">
+            <money-header></money-header>
+            <app-scroll>
+                <money-hot></money-hot>
+                <money-bid v-for="(item,index) in bidList" :data="item" :key="index"></money-bid>
+            </app-scroll>
+        </div>
+        <router-view></router-view>
     </div>
 </template>
 
@@ -32,8 +35,8 @@
             [Hot.name]:Hot,
             [Bid.name]:Bid
         },
-        mounted() {
-            console.log(JSON.stringify(this.bidList))
+        created() {
+            this.$store.dispatch('moneyStore/requireBidListData')
         }
     }
 </script>

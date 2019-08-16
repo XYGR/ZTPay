@@ -1,13 +1,10 @@
 module.exports = {
     devServer:{
         proxy: {
-            '/api': {
-                target: 'http://smartgold.natapp1.cc',
+            '/smartgold': {
+                target: 'http://119.23.189.240:8080',
                 changeOrigin: true,
-                ws: true,
-                pathRewrite:{
-                    '^/api':'/'
-                }
+                ws: true
             },
         }
     }

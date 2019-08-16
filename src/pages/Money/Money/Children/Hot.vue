@@ -17,7 +17,7 @@
                     <p class="money-hot-main-info-days-desc">锁定期</p>
                 </div>
             </div>
-            <button class="money-hot-main-btn">立即投标</button>
+            <router-link class="money-hot-main-btn" to="/money/bid/1">立即投标</router-link>
             <div class="money-hot-main-desc">万元预计利息49.32元</div>
         </div>
     </div>
