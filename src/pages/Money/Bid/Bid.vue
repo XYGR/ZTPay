@@ -1,12 +1,16 @@
 <template>
-    <div class="page sub-page" id="bid">
-        <app-header title="新手专享"></app-header>
-        <app-scroll class="content">
-            <bid-content></bid-content>
-            <bid-info></bid-info>
-        </app-scroll>
-        <bid-submit></bid-submit>
+    <div >
+        <div class="page sub-page" id="bid">
+            <app-header title="新手专享"></app-header>
+            <app-scroll class="content">
+                <bid-content></bid-content>
+                <bid-info></bid-info>
+            </app-scroll>
+            <bid-submit></bid-submit>
+        </div>
+        <router-view></router-view>
     </div>
+
 </template>
 
 <script>

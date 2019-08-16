@@ -28,7 +28,7 @@
         color: #333333;
         background-color: #fff;
         &::before{
-            border-color: #F4F4F4;
+            border-bottom: 4px solid #F4F4F4;
         }
         .icon-arrow-left{
             position: absolute;

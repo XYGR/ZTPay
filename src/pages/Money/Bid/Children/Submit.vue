@@ -4,7 +4,7 @@
             <p class="bid-submit-info-text">投标<br>金额</p>
             <input type="number" class="bid-submit-info-inp" v-model.number="amount" placeholder="¥最小投标100.00元">
         </div>
-        <router-link to="/money" class="bid-submit-action" >投标</router-link>
+        <button class="bid-submit-action" @click.prevent="bidSubmit">投标</button>
     </div>
 </template>
 
@@ -14,6 +14,11 @@
         data(){
             return {
                 amount:''
+            }
+        },
+        methods:{
+            bidSubmit(){
+                this.$router.push({ path: `/money/bid/1/success/${this.amount}`})
             }
         }
     }
