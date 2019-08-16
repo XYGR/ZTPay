@@ -30,19 +30,16 @@
 </template>
 
 <script>
+    
     export default {
-       
+       name: "Manage",
     }
 </script>
 
 <style lang="scss" scoped>
     .Manage{
-        overflow: hidden;
-        position: absolute;
-        width: 8.96rem;
-        top: 2.3733rem;
-        bottom: 0;
         padding: 0 0.5333rem;
+        box-sizing: border-box;
         background: #fff;
         .register{
             border-bottom: 0.2667rem solid #ccc;
@@ -60,8 +57,8 @@
                    width: 6.8267rem;
                 }
                 i{
-                    float: right;
                     font-weight: 900;
+                    float: right;
                 }
             }
         };
@@ -76,6 +73,49 @@
             };
             img{
                 margin: 0 auto;
+            }
+        };
+        .records{
+            border-bottom: 0.2667rem solid #ccc;
+            h1{
+                font-size: 0.5333rem;
+                color: blue;
+                font-weight: 600;
+                margin-top: 0.6667rem;
+                margin-bottom: 0.2933rem;
+            };
+            p{
+                font-size: 0.32rem;
+                line-height: 0.6667rem;
+                i{
+                    float: right;
+                    font-weight: 900;
+                }
+            }
+        };
+        .risk{
+            h1{
+                font-size: 0.5333rem;
+                color: blue;
+                font-weight: 600;
+                margin-top: 0.6667rem;
+                margin-bottom: 0.2933rem;
+            };
+            h2{
+                font-size: 0.48rem;
+                line-height: 0.6667rem;
+            };
+            img{
+                width: 8.6667rem;
+                margin: 0 auto;
+            };
+            p{
+                font-size: 0.32rem;
+            };
+            strong{
+                line-height: 1.52rem;
+                margin-left: 4.6667rem;
+                font-size: 0.4267rem;
             }
         }
     }

@@ -1,3 +1,10 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-08-15 17:26:31
+ * @LastEditTime: 2019-08-15 19:20:33
+ * @LastEditors: Please set LastEditors
+ -->
 //公共tabBar模块
 <template>
     <div class="tab-bar">
@@ -30,7 +37,9 @@
         position: fixed;
         bottom: 0;
         left: 0;
+        z-index:1;
         box-shadow:0px -0.027rem 0.133rem 0rem rgba(71,70,70,0.22);
+        background-color: #FFFFFF;
         &-item{
             flex: 1;
             display: flex;

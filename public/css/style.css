@@ -14,10 +14,12 @@
 }
 .page.sub-page{
     bottom: 0;
+    z-index: 2;
+    background-color: #FFF;
 }
 .content{
     width: 100%;
     position: absolute;
-    top: 1.173rem;
+    top: 1.174rem;
     bottom: 0;
 }

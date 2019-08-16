@@ -1,4 +1,5 @@
 <template>
+    <div>
     <div id="home" class="page">
         <app-scroll>
             <home-banner></home-banner>
@@ -6,7 +7,9 @@
             <novice-benefit></novice-benefit>
             <home-footer></home-footer>
         </app-scroll>
-        <router-view></router-view>
+
+    </div>
+    <router-view></router-view>
     </div>
 </template>
 

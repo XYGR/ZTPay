@@ -2,33 +2,7 @@
    <div class="Records">
        <div>
             <h1>平台数据（截止至2019-07-26 23:59:59）</h1>
-            <div>
-                <p>平台自成立以来的累计交易金额</p>
-                <strong>53.078.959.523.6元</strong>
-                <span>累计交易笔数:4.470.469笔</span>
-            </div>
-            <div>
-                <span>理财余额</span>
-                <strong>3.084.793.754.51元</strong>
-                <ul>
-                    <li>
-                        <p>累计理财人数量</p>
-                        <strong>599.775人</strong>
-                    </li>
-                     <li>
-                        <p>累计投资人数量</p>
-                        <strong>1.084.741人</strong>
-                    </li>
-                     <li>
-                        <p>当前理财人数量</p>
-                        <strong>37.784人</strong>
-                    </li>
-                     <li>
-                        <p>当前投资人数量</p>
-                        <strong>55.044人</strong>
-                    </li>
-                </ul>
-            </div>
+            <img src="../../../../assets/msg/shuju.png" alt="">
        </div>
         <div>
             <h1>收费标准</h1>
@@ -51,7 +25,7 @@
             <div>
                 <h2>管理费用:</h2>
                 <p>当前实际利息-目标利息，服务费为0元；</p>
-                <p>当前实际利息-目标利息，则服务费=实；</p>
+                <p>当前实际利息-目标利息，则服务费=实际；</p>
                 <p>利息-目标利息</p>
             </div>
             <div>
@@ -66,6 +40,9 @@
                 <h2>直投项目及债权转让业务收费标准</h2>
                 <p><span>加入费用:</span><i>除出借本金外，无其他额外费用</i></p>
                 <p><span>债权转让手续费:</span><i>根据债权持有天数不同手续费施行剃式扣费</i></p>
+                <img src="../../../../assets/msg/jieguo.png" alt="">
+                <p>*最低收取1元，无上限</p>
+                <strong>法定代表人签名:</strong>
             </div>
         </div>
    </div>
@@ -73,10 +50,42 @@
 
 <script>
     export default {
-       
+       name: "Records",
     }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+    .Records{
+        padding: 0 0.5333rem;
+        box-sizing: border-box;
+        background: #fff;
+        h1{
+            font-size: 0.4267rem;
+            line-height: 1.3333rem;
+            color: blue;
+            font-weight: 600;
+        };
+        h2{
+            font-size: 0.3733rem;
+            font-weight: 600;
+            line-height: 1.7333rem;
+        };
+        ul li,p{
+            font-size: 0.32rem;
+            line-height: 1.3333rem;
+            i{
+                float: right;
+                font-weight: 900;
+            }
+        };
+        span{
+            font-size: 0.32rem;
+            line-height: 0.88rem;
+        };
+        strong{
+                line-height: 1.52rem;
+                margin-left: 4.6667rem;
+                font-size: 0.4267rem;
+            }
+    }
 </style>

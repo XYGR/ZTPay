@@ -18,6 +18,10 @@ export default [
                     {
                         path:"Records",
                         component:()=>import('../pages/Home/Msg/Children/Records'),
+                    },
+                    {
+                        path:"/",
+                        component:()=>import('../pages/Home/Msg/Children/Issues'),
                     }
                 ]
             }

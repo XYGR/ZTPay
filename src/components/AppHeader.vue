@@ -1,9 +1,9 @@
-//公共头部模块
 <template>
-    <div id="app-header">
-        <!-- 返回按钮 -->
+<!--    公共头部模块-->
+    <div id="app-header" class="border-bottom">
+<!--        返回按钮-->
         <i class="iconfont icon-arrow-left" @click="$router.back()"></i>
-        <!-- 标题 需要通过props传入title -->
+<!--        标题 需要通过props传入title-->
         <h2 class="app-header-title">{{title}}</h2>
     </div>
 </template>
@@ -27,6 +27,9 @@
         position: relative;
         color: #333333;
         background-color: #fff;
+        &::before{
+            border-color: #F4F4F4;
+        }
         .icon-arrow-left{
             position: absolute;
             font-size: 0.6rem;

@@ -18,7 +18,7 @@
 
 <script>
     export default {
-       name: "msg-Issues",
+       name: "Issues",
         components:{
         }
     }
@@ -26,12 +26,8 @@
 
 <style lang="scss" scoped>
     .Issues{
-        overflow: hidden;
-        position: absolute;
-        width: 8.96rem;
-        top: 2.3733rem;
-        bottom: 0;
         padding: 0 0.5333rem;
+        box-sizing: border-box;
         background: #fff;
         h1{
             font-size: 0.5333rem;
@@ -40,16 +36,21 @@
             font-weight: 600;
         };
         ul li{
-                font-size: 0.3733rem;
-                margin-bottom: 0.64rem;
-                span{
-                    display: inline-block;
-                   width: 6.8267rem;
-                }
-                i{
-                    float: right;
-                    font-weight: 900;
-                }
+            font-size: 0.3733rem;
+            margin-bottom: 0.64rem;
+            span{
+                display: inline-block;
+                width: 6.8267rem;
             }
+            i{
+                float: right;
+                font-weight: 900;
+            }
+        };
+        strong{
+            line-height: 1.52rem;
+            margin-left: 4.6667rem;
+            font-size: 0.4267rem;
+        }
     }
 </style>
