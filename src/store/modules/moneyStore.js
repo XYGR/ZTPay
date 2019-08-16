@@ -1,3 +1,5 @@
+import api from "../../net/api";
+import {post} from "../../net/require";
 export default {
     namespaced: true,
     state: {
@@ -86,6 +88,12 @@ export default {
         ]
     },
     mutations: {},
-    actions: {}
+    actions: {
+        requireBidListData(){
+            post(api.INVESTMENT_MESSAGE_LIST).then(res=>{
+                console.log(res)
+            })
+        }
+    }
 
 }
