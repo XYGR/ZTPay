@@ -3,7 +3,7 @@
         <money-header></money-header>
         <app-scroll>
             <money-hot></money-hot>
-            <money-bid :data="bidList[0]"></money-bid>
+            <money-bid v-for="(item,index) in bidList" :data="item" :key="index"></money-bid>
         </app-scroll>
     </div>
 </template>
@@ -13,22 +13,18 @@
     import Header from "./Children/Header";
     import Hot from "./Children/Hot";
     import Bid from "./Children/Bid";
+    import {mapState} from 'vuex'
     export default {
         name: "Money",
         data(){
             return {
-               bidList:[
-                   {
-                       title:' 新手专享',
-                       bidData:[
-                           {
-                                title:'新手专享30天授权方案',
-                                tags:[{class:'solid',value:'限购一次'},{class:'hollow',value:'转让即到'}]
-                           }
-                       ]
-                   }
-               ]
+
             }
+        },
+        computed:{
+          ...mapState({
+              bidList:state =>state.moneyStore.bidListData
+          })
         },
         components: {
             [AppScroll.name]:AppScroll,
@@ -36,7 +32,9 @@
             [Hot.name]:Hot,
             [Bid.name]:Bid
         },
-
+        mounted() {
+            console.log(JSON.stringify(this.bidList))
+        }
     }
 </script>
 

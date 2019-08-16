@@ -4,7 +4,7 @@ export default [
         component:()=>import('../pages/Home/Home/Home'),
         children:[
             {
-                path:"/home/msg/:id",
+                path:"msg/:id",
                 component:()=>import('../pages/Home/Msg/Msg'),
             }
         ]
