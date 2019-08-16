@@ -3,7 +3,9 @@
         <app-header title="新手专享"></app-header>
         <app-scroll class="content">
             <bid-content></bid-content>
+            <bid-info></bid-info>
         </app-scroll>
+        <bid-submit></bid-submit>
     </div>
 </template>
 
@@ -11,9 +13,13 @@
     import AppHeader from "../../../components/AppHeader";
     import AppScroll from "../../../components/AppScroll";
     import Content from "./Children/Content";
+    import BidInfo from "./Children/Info";
+    import BidSubmit from "./Children/Submit";
     export default {
         name: "Bid",
         components:{
+            BidSubmit,
+            [BidInfo.name]:BidInfo,
             [AppHeader.name]:AppHeader,
             [AppScroll.name]:AppScroll,
             [Content.name]:Content
@@ -23,7 +29,7 @@
 
 <style lang="scss">
     #bid{
-        background-color: #F8F8F8;
+        background-color: #FFF;
     }
     .money-com-title{
         font-size: 0.32rem;

@@ -27,6 +27,9 @@
         position: relative;
         color: #333333;
         background-color: #fff;
+        &::before{
+            border-color: #F4F4F4;
+        }
         .icon-arrow-left{
             position: absolute;
             font-size: 0.6rem;
