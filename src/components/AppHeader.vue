@@ -1,9 +1,16 @@
-//公共头部模块
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-08-15 17:26:31
+ * @LastEditTime: 2019-08-15 19:03:56
+ * @LastEditors: Please set LastEditors
+ -->
+
 <template>
     <div id="app-header">
-        //返回按钮
+     
         <i class="iconfont icon-arrow-left" @click="$router.back()"></i>
-        //标题 需要通过props传入title
+     
         <h2 class="app-header-title">{{title}}</h2>
     </div>
 </template>
