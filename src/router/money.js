@@ -15,7 +15,14 @@ export default [
                         component:()=>import('../pages/Money/BidSuccess/BidSuccess'),
                     }
                 ]
+            },
+            {
+                //投标页面
+                path:"record",
+                component:()=>import('../pages/Money/Record/Record'),
+                children:[]
             }
+
         ]
     }
 ]
