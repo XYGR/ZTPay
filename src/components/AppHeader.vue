@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!--
  * @Description: In User Settings Edit
  * @Author: your name
@@ -7,20 +6,15 @@
  * @LastEditors: Please set LastEditors
  -->
 
-=======
->>>>>>> 326989d35b5a5eee33f0f70d5bdacda028f6e0fa
 <template>
 <!--    公共头部模块-->
     <div id="app-header">
-<<<<<<< HEAD
      
         <i class="iconfont icon-arrow-left" @click="$router.back()"></i>
      
-=======
 <!--        返回按钮-->
         <i class="iconfont icon-arrow-left" @click="$router.back()"></i>
 <!--        标题 需要通过props传入title-->
->>>>>>> 326989d35b5a5eee33f0f70d5bdacda028f6e0fa
         <h2 class="app-header-title">{{title}}</h2>
     </div>
 </template>
