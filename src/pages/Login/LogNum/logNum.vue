@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-14 23:37:58
- * @LastEditTime: 2019-08-15 21:39:05
+ * @LastEditTime: 2019-08-16 11:53:07
  * @LastEditors: Please set LastEditors
  -->
  
@@ -11,8 +11,8 @@
     <div class="logNum page sub-page">    
         <app-header title='注册/登录'></app-header>
         <theme></theme>   
-         <input type="text" class="NumInp" placeholder="请输入手机号">
-        <router-link to="/login/passWord/12313"> <div class="Logbtn"  >下一步</div></router-link>
+         <input type="text" class="NumInp" placeholder="请输入邮箱账号" ref="input">
+        <router-link :to="{path:'/login/passWord',query:{nums:this.nums}}"> <div class="Logbtn" @click="numsAction" >下一步</div></router-link>
           <h1></h1>
         <div class="chat">
             <h2>微信登录</h2>
@@ -33,7 +33,19 @@ export default {
     [Theme.name]: Theme,
     [AppHeader.name]: AppHeader,
 
+  },
+  data(){
+      return{
+        nums:""
+      }
+  },
+  methods:{
+     numsAction:function(){
+       this.nums=this.$refs.input.value;
+
+     }
   }
+
 };
 </script>
 

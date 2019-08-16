@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-15 17:26:31
- * @LastEditTime: 2019-08-15 21:42:32
+ * @LastEditTime: 2019-08-16 11:51:43
  * @LastEditors: Please set LastEditors
  -->
 <template>
@@ -11,9 +11,10 @@
         <app-header title='登录'></app-header>
         <theme></theme>   
          <input type="text" class="NumInp" placeholder="请输入6-12位密码">
-        <router-link to="/login/passMess/1223"> <div class="Logmess" >短信码验证登录</div></router-link>
+        <router-link :to="{path:'/login/passMess',query:{nums:value}}"> <div class="Logmess" >短信码验证登录</div></router-link>
         <router-link to="home"> <div class="Logbtn" >登录</div></router-link>
           <h1>需要帮助</h1>
+         
    </div>
    <router-view></router-view>
     </div>
@@ -27,6 +28,14 @@ export default {
   components: {
     [Theme.name]: Theme,
     [AppHeader.name]: AppHeader
+  },
+  data(){
+    return{
+
+    }
+  },
+  methods:{
+
   }
 }
 </script>
