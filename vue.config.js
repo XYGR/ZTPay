@@ -1,3 +1,10 @@
+/*
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-08-16 08:37:02
+ * @LastEditTime: 2019-08-17 11:38:46
+ * @LastEditors: Please set LastEditors
+ */
 module.exports = {
     devServer:{
         proxy: {
@@ -11,9 +18,15 @@ module.exports = {
                 changeOrigin: true,
                 ws: true,
                 pathRewrite:{
+<<<<<<< HEAD
+                    '^/api':'/'
+                }
+            }
+=======
                     '^/api': '/'
                 }
             },
+>>>>>>> f9b8385b86bf200903296b554b02662ff553ab96
         }
     }
 
