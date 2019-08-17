@@ -7,8 +7,16 @@
                     <p class="money-com-title-text">{{item.title}}</p>
                     <p class="money-com-title-tag" v-for="tag in item.tags" :class="tag.class">{{tag.value}}</p>
                 </h3>
-                <div class="money-com-info">
-
+                <div class="money-bid-item-block">
+                    <div class="money-bid-item-info rate">
+                        <p class="money-bid-item-info-text">{{item.rate.text[0]}}<span>{{item.rate.text[1]}}</span></p>
+                        <p class="money-bid-item-info-desc">{{item.rate.desc}}</p>
+                    </div>
+                    <div class="money-bid-item-info days">
+                        <p class="money-bid-item-info-text">{{item.days.text[0]}}<span>{{item.days.text[1]}}</span></p>
+                        <p class="money-bid-item-info-desc">{{item.days.desc}}</p>
+                    </div>
+                    <button class="money-bid-item-btn">立即投标</button>
                 </div>
             </li>
         </ul>
@@ -40,6 +48,41 @@
             box-shadow: 0 0.02rem 0.3rem #999;
             border-radius: 0.133rem;
             margin-bottom: 0.4rem;
+            &-block{
+                margin-top: 0.48rem;
+                padding: 0 0.427rem;
+                display: flex;
+                justify-content: space-between;
+            }
+            &-info{
+                flex: 1;
+                &-text{
+                    font-size: 0.6rem;
+                    span{
+                        font-size: 0.347rem;
+                    }
+                }
+
+                &.rate{
+                    color: #FD5350;
+                }
+                &.days{
+                    color: #0E132E;
+                }
+                &-desc{
+                    color: #98A0A8;
+                }
+            }
+            &-btn{
+                width: 1.867rem;
+                height: 0.8rem;
+                display: block;
+                border-radius: 0.4rem;
+                background-color: #2186FE;
+                color: #ffffff;
+                text-align: center;
+                font-size: 0.347rem;
+            }
         }
     }
 </style>

@@ -2,24 +2,89 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-14 23:37:58
- * @LastEditTime: 2019-08-15 11:50:22
+ * @LastEditTime: 2019-08-15 21:39:05
  * @LastEditors: Please set LastEditors
  -->
+ 
 <template>
-    <div class="logNum">
-        
+<div>
+    <div class="logNum page sub-page">    
+        <app-header title='注册/登录'></app-header>
+        <theme></theme>   
+         <input type="text" class="NumInp" placeholder="请输入手机号">
+        <router-link to="/login/passWord/12313"> <div class="Logbtn"  >下一步</div></router-link>
+          <h1></h1>
+        <div class="chat">
+            <h2>微信登录</h2>
+            <h3>qq登录</h3>
+        </div>
+    </div>
+     <router-view></router-view>
     </div>
 </template>
 
 <script>
-export default {
 
-}
+import Theme from "../common/theme";
+import AppHeader from "../../../components/AppHeader";
+export default {
+  name: "LogNum",
+  components: {
+    [Theme.name]: Theme,
+    [AppHeader.name]: AppHeader,
+
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-   .logNum{
-       background: #ffffff;
+.logNum {
+  width: 100%;
+  height: 100%;
+  background-color: #ffff;
+  z-index: 2;
 
-   }
+  .NumInp {
+    border: 1px #fff solid;
+    border-bottom: 1px rgba(235, 235, 235, 1) solid;
+    margin-left: 0.68rem;
+    width: 8.6133rem;
+    height: 0.9333rem;
+    font-size: 0.4rem;
+  }
+  .Logbtn {
+    width: 8.6rem;
+    height: 1.3867rem;
+    background: rgba(184, 184, 184, 1);
+    border-radius: 0.0667rem;
+    font-size: 0.48rem;
+    margin-left:0.68rem;
+    margin-top:1.4667rem;
+    text-align: center;
+    line-height: 1.3867rem;
+  }
+  h1{
+      font-size: 0.32rem;
+      color:#3A56C8;
+      margin-left:7.6533rem;
+      margin-right:0.8533rem;
+  }
+  .chat{
+      margin-top:2.56rem;
+      display: flex;
+      margin-left: 1.7733rem;
+      h2{
+          flex: 1;
+          font-size: 0.32rem;
+          padding-left: 0.6267rem;
+          background: url(../../../assets/login/wechat.png ) no-repeat left center;
+      }
+      h3{
+          flex: 1;
+           font-size: 0.32rem;
+          padding-left: 0.6267rem;
+          background: url(../../../assets/login/qq.png ) no-repeat left center;
+      }
+  }
+}
 </style>
