@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-15 17:26:31
- * @LastEditTime: 2019-08-17 15:19:04
+ * @LastEditTime: 2019-08-17 17:48:55
  * @LastEditors: Please set LastEditors
  -->
 <template>
@@ -52,7 +52,6 @@ export default {
       this.$store.dispatch("loginStore/requireCodeData", this.nums);
       this.time = 60;
       this.disabled = true;
-
       this.timer();
     },
 
@@ -70,6 +69,9 @@ export default {
     },
     //用户登录判断
     userLogin: function() {
+      //将用户名储存到本地
+      sessionStorage.setItem('userName', JSON.stringify(this.nums))
+      //用户输入的验证码
       this.userCode = this.$refs.userCode.value;
       if (this.userCode === this.CodeData && this.userCode != "") {
         Toast.success({
