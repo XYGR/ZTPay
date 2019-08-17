@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-14 23:37:58
- * @LastEditTime: 2019-08-16 11:53:07
+ * @LastEditTime: 2019-08-16 19:16:35
  * @LastEditors: Please set LastEditors
  -->
  
@@ -12,7 +12,7 @@
         <app-header title='注册/登录'></app-header>
         <theme></theme>   
          <input type="text" class="NumInp" placeholder="请输入邮箱账号" ref="input">
-        <router-link :to="{path:'/login/passWord',query:{nums:this.nums}}"> <div class="Logbtn" @click="numsAction" >下一步</div></router-link>
+        <router-link :to="{path:'/login/passMess',query:{nums:this.nums}}"> <div class="Logbtn" @click="numsAction" >下一步</div></router-link>
           <h1></h1>
         <div class="chat">
             <h2>微信登录</h2>
