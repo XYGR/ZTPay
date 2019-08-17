@@ -65,6 +65,29 @@ export default [
                         component: () => import('../pages/Mine/NoticeDetail/NoticeDetail'),
                     }
                 ]
+            },
+            {
+                //消息列表
+                path:'bill',
+                component: () => import('../pages/Mine/Bill/Bill'),
+                children:[]
+            },
+            {
+                //投标
+                path:'bid',
+                component: () => import('../pages/Mine/Bid/Bid'),
+                children:[
+                    {
+                        //收益记录
+                        path:'profit',
+                        component: () => import('../pages/Mine/Profit/Profit'),
+                    },
+                    {
+                        //交易记录
+                        path:'transaction',
+                        component: () => import('../pages/Mine/Transaction/Transaction'),
+                    }
+                ]
             }
         ]
     }

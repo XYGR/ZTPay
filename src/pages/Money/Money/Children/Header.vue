@@ -24,7 +24,7 @@
 <style scoped lang="scss">
     .money-header{
         width: 100%;
-        padding: 0.533rem 0.827rem 0.133rem;
+        padding: 0.133rem 0.827rem ;
         box-sizing: border-box;
         background-color: #ffffff;
         display: flex;

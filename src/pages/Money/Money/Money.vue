@@ -3,11 +3,13 @@
         <div id="money" class="page">
             <money-header></money-header>
             <app-scroll>
-                <money-hot></money-hot>
+                <money-hot :data="bidHotData"></money-hot>
                 <money-bid v-for="(item,index) in bidList" :data="item" :key="index"></money-bid>
             </app-scroll>
         </div>
-        <router-view></router-view>
+        <transition name="van-slide-right">
+            <router-view></router-view>
+        </transition>
     </div>
 </template>
 
@@ -26,7 +28,8 @@
         },
         computed:{
           ...mapState({
-              bidList:state =>state.moneyStore.bidListData
+              bidHotData:state =>state.moneyStore.bidListData[0],
+              bidList:state =>state.moneyStore.bidListData.slice(1)
           })
         },
         components: {
@@ -36,8 +39,8 @@
             [Bid.name]:Bid
         },
         created() {
-            this.$store.dispatch('moneyStore/requireBidListData')
-        }
+            this.$store.dispatch('moneyStore/requireBidListData');
+        },
     }
 </script>
 
@@ -47,7 +50,7 @@
         .app-scroll{
             width: 100%;
             position: absolute;
-            top: 2.027rem;
+            top: 1.627rem;
             bottom: 0;
         }
         .money-com-title{

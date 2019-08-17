@@ -1,11 +1,13 @@
 <template>
     <div class="mine-balance">
         <div class="mine-balance-assets">
-            <h3 class="mine-balance-assets-title">总资产(元)</h3>
-            <p class="mine-balance-assets-money">
-                <span class="mine-balance-assets-money-before">0</span>
-                <span class="mine-balance-assets-money-after">.00</span>
-            </p>
+            <router-link to="/mine/assets">
+                <h3 class="mine-balance-assets-title">总资产(元)</h3>
+                <p class="mine-balance-assets-money">
+                    <span class="mine-balance-assets-money-before">0</span>
+                    <span class="mine-balance-assets-money-after">.00</span>
+                </p>
+            </router-link>
         </div>
         <div class="mine-balance-profit">
             <div class="mine-balance-profit-item interest">

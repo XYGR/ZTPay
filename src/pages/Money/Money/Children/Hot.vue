@@ -1,31 +1,35 @@
 <template>
     <div class="money-hot">
-        <h2 class="money-hot-title">高人气</h2>
-        <div class="money-hot-main">
+        <template v-if="data">
+        <h2 class="money-hot-title">{{data.title}}</h2>
+        <div class="money-hot-main" v-for="item in data.list" :key="item.id">
             <h3 class="money-com-title">
-                <p class="money-com-title-text">新手专享15天预授权方案</p>
-                <p class="money-com-title-tag solid">限购一次</p>
-                <p class="money-com-title-tag hollow">转让即到</p>
+                <p class="money-com-title-text">{{item.imName}}</p>
+                <p class="money-com-title-tag" v-for="tag in item.tags" :class="tag.class">{{tag.value}}</p>
             </h3>
             <div class="money-hot-main-info">
                 <div class="money-hot-main-info-rate">
-                    <p class="money-hot-main-info-rate-text">6<span>%+6%</span></p>
-                    <p class="money-hot-main-info-rate-desc">历史参考扣费后利率</p>
+                    <p class="money-hot-main-info-rate-text">{{item.rate.text[0]}}<span>{{item.rate.text[1]}}</span></p>
+                    <p class="money-hot-main-info-rate-desc">{{item.rate.desc}}</p>
                 </div>
                 <div class="money-hot-main-info-days">
-                    <p class="money-hot-main-info-days-text">15<span>天</span></p>
-                    <p class="money-hot-main-info-days-desc">锁定期</p>
+                    <p class="money-hot-main-info-days-text">{{item.days.text[0]}}<span>{{item.days.text[1]}}</span></p>
+                    <p class="money-hot-main-info-days-desc">{{item.days.desc}}</p>
                 </div>
             </div>
-            <router-link class="money-hot-main-btn" to="/money/bid/1">立即投标</router-link>
+            <router-link class="money-hot-main-btn" :to="{path:`/money/bid/+${item.itId}`}" >立即投标</router-link>
             <div class="money-hot-main-desc">万元预计利息49.32元</div>
         </div>
+        </template>
     </div>
 </template>
 
 <script>
     export default {
-        name: "money-hot"
+        name: "money-hot",
+        props:{
+            data:Object
+        }
     }
 </script>
 

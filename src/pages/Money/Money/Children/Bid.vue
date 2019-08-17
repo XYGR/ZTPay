@@ -2,9 +2,9 @@
     <div class="money-bid">
         <h1 class="money-bid-title">{{data.title}}</h1>
         <ul class="money-bid-list">
-            <li class="money-bid-item" v-for="(item,index) in data.bidData" :key="index">
+            <li class="money-bid-item" v-for="(item,index) in data.list" :key="index">
                 <h3 class="money-com-title">
-                    <p class="money-com-title-text">{{item.title}}</p>
+                    <p class="money-com-title-text">{{item.imName}}</p>
                     <p class="money-com-title-tag" v-for="tag in item.tags" :class="tag.class">{{tag.value}}</p>
                 </h3>
                 <div class="money-bid-item-block">
@@ -16,7 +16,7 @@
                         <p class="money-bid-item-info-text">{{item.days.text[0]}}<span>{{item.days.text[1]}}</span></p>
                         <p class="money-bid-item-info-desc">{{item.days.desc}}</p>
                     </div>
-                    <button class="money-bid-item-btn">立即投标</button>
+                    <router-link class="money-bid-item-btn" :to="{path:`/money/bid/+${item.itId}`}" >立即投标</router-link>
                 </div>
             </li>
         </ul>
@@ -76,6 +76,7 @@
             &-btn{
                 width: 1.867rem;
                 height: 0.8rem;
+                line-height: 0.8rem;
                 display: block;
                 border-radius: 0.4rem;
                 background-color: #2186FE;

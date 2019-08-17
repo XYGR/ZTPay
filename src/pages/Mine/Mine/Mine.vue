@@ -8,7 +8,10 @@
         <button class="mine-login-out">退出登录</button>
       </app-scroll>
     </div>
-    <router-view></router-view>
+    <transition name="van-slide-right">
+        <router-view></router-view>
+    </transition>
+
   </div>
 </template>
 
@@ -46,7 +49,7 @@ export default {
     line-height: 1.04rem;
     color: #ffffff;
     text-align: center;
-    margin-top: 2.133rem;
+    margin-top: 1.133rem;
     margin-bottom: 0.267rem;
     background-color: #1f7dfd;
     border-radius: 0.133rem;

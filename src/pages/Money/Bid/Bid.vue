@@ -1,6 +1,6 @@
 <template>
-    <div >
-        <div class="page sub-page" id="bid">
+    <div class="page sub-page" >
+        <div id="bid">
             <app-header title="新手专享"></app-header>
             <app-scroll class="content">
                 <bid-content></bid-content>
@@ -8,7 +8,9 @@
             </app-scroll>
             <bid-submit></bid-submit>
         </div>
-        <router-view></router-view>
+        <transition name="van-slide-right">
+            <router-view></router-view>
+        </transition>
     </div>
 
 </template>
