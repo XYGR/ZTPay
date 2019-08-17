@@ -1,13 +1,12 @@
 <template>
     <div>
     <div id="home" class="page">
-        <app-scroll>
+        <app-scroll class="content">
             <home-banner></home-banner>
             <home-notice></home-notice>
             <novice-benefit></novice-benefit>
             <home-footer></home-footer>
         </app-scroll>
-
     </div>
     <router-view></router-view>
     </div>

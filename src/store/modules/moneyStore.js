@@ -40,11 +40,10 @@ export default {
                         })
                     }
                 })
-                console.log(filterData)
                 context.commit('setBidListData',filterData)
 
             }).catch(error =>{
-                console.log(error)
+                console.error(error)
             })
         }
     }

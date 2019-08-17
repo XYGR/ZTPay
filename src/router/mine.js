@@ -5,6 +5,18 @@ export default [
         component: () => import('../pages/Mine/Mine/Mine'),
         children: [
             {
+                //实名认证
+                path:'authentication',
+                component: () => import('../pages/Mine/Authentication/Authentication'),
+                children:[
+                    {
+                        //实名认证成功
+                        path:'success',
+                        component: () => import('../pages/Mine/AuthenticationSuccess/AuthenticationSuccess'),
+                    }
+                ]
+            },
+            {
                 // 银行卡
                 path: 'bankcard',
                 component: () => import('../pages/Mine/BankCard/BankCard'),

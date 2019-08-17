@@ -1,12 +1,12 @@
 <template>
-    <div class="bid-success page sub-page">
-        <app-header title="投标" :link="{value:'撤回',to:`/money/bid/1/withdraw/${$route.params.amount}`}"></app-header>
-        <div class="content">
-            <bid-success-status></bid-success-status>
-            <bid-success-info></bid-success-info>
-        </div>
-        <router-link class="bid-success-again" to="/money/bid/1">再投一次</router-link>
-    </div>
+     <div class="page sub-page">
+        <app-header title="撤销"></app-header>
+         <div class="content">
+             <bid-withdraw-status></bid-withdraw-status>
+             <bid-withdraw-info></bid-withdraw-info>
+         </div>
+         <router-link class="bid-withdraw-again" to="/money/bid/1">再投一次</router-link>
+     </div>
 </template>
 
 <script>
@@ -14,7 +14,7 @@
     import Status from "./Children/Status";
     import Info from "./Children/Info";
     export default {
-        name: "BidSuccess",
+        name: "BidWithdraw",
         components:{
             [AppHeader.name]:AppHeader,
             [Status.name]:Status,
@@ -24,7 +24,7 @@
 </script>
 
 <style scoped>
-    .bid-success-again{
+    .bid-withdraw-again{
         width: 100%;
         height: 1.307rem;
         display: block;

@@ -1,6 +1,6 @@
 <template>
-<div>
-    <div class="page sub-page">
+<div class="page sub-page">
+    <div >
         <app-header title='银行卡' class = "header"></app-header>
         <div class = "Cards1">
             <img src="/images/bankcard/bank.png" alt="" class = "pic">
@@ -25,7 +25,9 @@
             </div> 
         </router-link>
     </div>
-    <router-view></router-view>
+    <transition name="van-slide-right">
+        <router-view></router-view>
+    </transition>
 </div>
 </template>
 

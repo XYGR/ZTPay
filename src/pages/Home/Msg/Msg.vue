@@ -2,9 +2,9 @@
     <div class="page sub-page">
         <app-header title="信息纰漏"></app-header>
         <msg-tle></msg-tle>
-        <AppScroll>
+        <app-scroll class="content">
             <router-view></router-view>
-        </AppScroll>
+        </app-scroll>
         
     </div>
 </template>
@@ -24,5 +24,7 @@ import AppScroll from '../../../components/AppScroll'
 </script>
 
 <style scoped>
-
+    .content{
+        top: 2.274rem;
+    }
 </style>

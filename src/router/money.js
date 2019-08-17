@@ -10,9 +10,14 @@ export default [
                 component:()=>import('../pages/Money/Bid/Bid'),
                 children:[
                     {
-                        //投标页面
+                        //投标成功页面
                         path:"success/:amount",
                         component:()=>import('../pages/Money/BidSuccess/BidSuccess'),
+                    },
+                    {
+                        //投标撤回页面
+                        path:"withdraw/:amount",
+                        component:()=>import('../pages/Money/BidWithdraw/BidWithdraw'),
                     }
                 ]
             },

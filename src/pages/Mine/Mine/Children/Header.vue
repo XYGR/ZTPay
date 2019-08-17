@@ -10,7 +10,7 @@
                     <p class="mine-header-user-info-vip">
                     </p>
                 </div>
-                <p class="mine-header-user-info-attestation">未实名认证</p>
+                <router-link class="mine-header-user-info-attestation" to="/mine/authentication">未实名认证</router-link>
             </div>
         </div>
         <div class="mine-header-menu">
@@ -73,6 +73,7 @@
                 &-attestation{
                     width: 1.627rem;
                     height: 0.533rem;
+                    display: block;
                     line-height: 0.533rem;
                     text-align: center;
                     font-size: 0.267rem;

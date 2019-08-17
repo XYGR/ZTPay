@@ -17,17 +17,10 @@ module.exports = {
                 target: 'http://smartgold.natapp1.cc',
                 changeOrigin: true,
                 ws: true,
-                pathRewrite:{
-<<<<<<< HEAD
-                    '^/api':'/'
-                }
-            }
-=======
+                pathRewrite: {
                     '^/api': '/'
                 }
-            },
->>>>>>> f9b8385b86bf200903296b554b02662ff553ab96
+            }
         }
     }
-
 }
