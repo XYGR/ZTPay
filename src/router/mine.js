@@ -53,6 +53,18 @@ export default [
                         ]
                     },
                 ]
+            },
+            {
+                //消息列表
+                path:'notice',
+                component: () => import('../pages/Mine/Notice/Notice'),
+                children:[
+                    {
+                        //消息详情
+                        path: 'detail',
+                        component: () => import('../pages/Mine/NoticeDetail/NoticeDetail'),
+                    }
+                ]
             }
         ]
     }
