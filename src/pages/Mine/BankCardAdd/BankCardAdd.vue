@@ -1,10 +1,16 @@
 <template>
-    <div></div>
+    <div>
+        <app-header title=''></app-header>
+    </div>
 </template>
 
 <script>
+    import AppHeader from '../../../components/AppHeader'
     export default {
-        name: "BankCardAdd"
+        name: "BankCardAdd",
+        components:{
+                [AppHeader.name]: AppHeader,
+            },
     }
 </script>
 
