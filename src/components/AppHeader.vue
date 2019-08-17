@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!--
  * @Description: In User Settings Edit
  * @Author: your name
@@ -7,8 +6,6 @@
  * @LastEditors: Please set LastEditors
  -->
 
-=======
->>>>>>> 062cd6f56777e9a09f3b526bb72ae9db9e1b6184
 <template>
 <!--    公共头部模块-->
     <div id="app-header" class="border-bottom">
