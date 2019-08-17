@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-16 17:20:18
- * @LastEditTime: 2019-08-17 13:58:38
+ * @LastEditTime: 2019-08-17 15:50:19
  * @LastEditors: Please set LastEditors
  */
 import api from "../../net/api";
@@ -10,18 +10,25 @@ import {post,get} from "../../net/require";
 export default {
     namespaced: true,
     state:{
-        userCode:""
+        userCode:"",
+        // 首页需要的用户名信息
+        userName:"",
     },
     mutations:{
         setUserCode(state,params){
              state.userCode=params
+        },
+        setUserName(state,params){
+            state.userName=setUserName;
         }
 
     },
     actions:{
  
         requireCodeData(context,username){
-            console.log(username)
+            //用户的邮箱账号数据
+            context.commit('setUserName',username)
+            // 验证码数据
             get(api.USER_PASSCODE_LOGIN+'?email='+username).then(res=>{
                 console.log(res);
                     let data= res.data.date
