@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-16 17:20:18
- * @LastEditTime: 2019-08-17 15:50:19
+ * @LastEditTime: 2019-08-17 16:43:54
  * @LastEditors: Please set LastEditors
  */
 import api from "../../net/api";
@@ -19,7 +19,7 @@ export default {
              state.userCode=params
         },
         setUserName(state,params){
-            state.userName=setUserName;
+            state.userName=params;
         }
 
     },
