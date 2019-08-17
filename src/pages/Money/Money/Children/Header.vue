@@ -1,6 +1,6 @@
 <template>
     <div class="money-header">
-        <router-link class="money-header-target" to="/money">
+        <router-link class="money-header-target" to="/money/record">
             <img src="../../../../assets/money/money_header_1.png" alt="" class="money-header-target-img">
             <p class="money-header-target-name">投标记录</p>
         </router-link>

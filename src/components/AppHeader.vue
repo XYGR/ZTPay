@@ -20,7 +20,7 @@
     export default {
         name: "app-header",
         props:{
-            title:String
+            title:String,
         },
         methods:{
 
@@ -35,6 +35,9 @@
         position: relative;
         color: #333333;
         background-color: #fff;
+        &::before{
+            border-bottom: 4px solid #F4F4F4;
+        }
         .icon-arrow-left{
             position: absolute;
             font-size: 0.6rem;

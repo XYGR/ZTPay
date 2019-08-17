@@ -16,7 +16,7 @@
     import Header from "./Children/Header";
     import Hot from "./Children/Hot";
     import Bid from "./Children/Bid";
-    import {mapState} from 'vuex'
+    import {mapState} from 'vuex';
     export default {
         name: "Money",
         data(){

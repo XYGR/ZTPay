@@ -16,6 +16,16 @@
             </div>
         </div>
         <van-progress :percentage="72" color="#2A89FA"/>
+        <div class="bid-content-money">
+            <div class="bid-content-money-item">
+                <p class="bid-content-money-item-num">1,0000.00</p>
+                <p class="bid-content-money-item-desc">剩余金额(元)</p>
+            </div>
+            <div class="bid-content-money-item">
+                <p class="bid-content-money-item-num">140,0000.00</p>
+                <p class="bid-content-money-item-desc">总金额(元)</p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -32,7 +42,7 @@
 <style lang="scss">
     .bid-content{
         background-color: #FFFFFF;
-        padding: 0 0.533rem;
+        padding: 0 0.533rem 0.32rem;
         .money-com-title-text{
             text-indent: 0;
         }
@@ -54,6 +64,34 @@
                     font-size: 0.267rem;
                     line-height: 0.333rem;
                     padding-top: 0.2rem;
+                }
+            }
+        }
+        .van-progress{
+            height: 0.093rem;
+            background: #F4F4F4;
+            border-radius: 0.093rem;
+            margin-top: 0.8rem;
+        }
+        .van-progress__pivot{
+            font-size: 0.213rem;
+        }
+        &-money{
+            display: flex;
+            margin-top: 0.267rem;
+            &-item{
+                flex: 1;
+                &-num{
+                    font-size: 0.48rem;
+                    font-weight: bold;
+                }
+                &-desc{
+                    font-size: 0.347rem;
+                    color: #666666;
+                    margin-top: 0.267rem;
+                }
+                &:last-of-type{
+                    text-align: right;
                 }
             }
         }
