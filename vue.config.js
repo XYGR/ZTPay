@@ -6,6 +6,14 @@ module.exports = {
                 changeOrigin: true,
                 ws: true
             },
+            '/api': {
+                target: 'http://smartgold.natapp1.cc',
+                changeOrigin: true,
+                ws: true,
+                pathRewrite:{
+                    '^/api': '/'
+                }
+            },
         }
     }
 
