@@ -1,6 +1,9 @@
 <template>
     <div>
-        <app-header title=''></app-header>
+        <div class="page sub-page">
+            <app-header title=''></app-header>
+        </div>
+        
     </div>
 </template>
 

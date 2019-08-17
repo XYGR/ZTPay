@@ -1,4 +1,5 @@
 <template>
+<div>
     <div class="page sub-page">
         <app-header title='银行卡' class = "header"></app-header>
         <div class = "Cards1">
@@ -21,11 +22,11 @@
             <div class = "Cards3">
             <img src="/images/bankcard/add.png" alt="" class = "add">
             <p class = "newCard">绑定新卡</p>
-        </div> 
+            </div> 
         </router-link>
     </div>
-
-
+    <router-view></router-view>
+</div>
 </template>
 
 <script>
